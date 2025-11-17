@@ -4,31 +4,23 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Cyber Playbook</title>
-<meta name="description" content="Clayton Holden's Cyber Playbook — hardware, networking, and security labs with evidence and reflections." />
-<link rel="canonical" href="https://claytonholden.github.io/Cyber-playbook2/">
-
-<!-- Open Graph -->
-<meta property="og:title" content="Cyber Playbook — Clayton Holden" />
-<meta property="og:description" content="Topic-based portfolio: hardware, networking, security — with screenshots and reflections." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://claytonholden.github.io/Cyber-playbook2/" />
-<meta property="og:image" content="https://claytonholden.github.io/Cyber-playbook2/assets/images/cover.png" />
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Cyber Playbook — Clayton Holden" />
-<meta name="twitter:description" content="Hardware, networking, and security labs with evidence." />
-<meta name="twitter:image" content="https://claytonholden.github.io/Cyber-playbook2/assets/images/cover.png" />
-
-<!-- Optional favicon -->
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-
-<meta name="description" content="Topic-based cyber playbook: overview, approach, evidence, reflection." />
+<meta name="description" content="Cyber playbook: hardware, networking, security topics with evidence and reflections." />
 <link rel="stylesheet" href="assets/styles.css" />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 </head>
 <body>
-    <a class="skip" href="#overview">Skip to main content</a>
 
+<!--
+🚨 STUDENT GUARDRAILS 🚨
+1) Do NOT delete anything above <main class="wrap">.
+2) Copy entire <section class="topic">…</section> blocks only.
+3) Put screenshots in assets/images/.
+4) Always close every </section> tag.
+5) If broken: use Git history or your backup to restore.
+-->
+
+<!-- Accessibility: Skip link -->
+<a class="skip" href="#overview">Skip to main content</a>
 
 <!-- Top bar -->
 <header class="topbar">
@@ -37,13 +29,13 @@
     <strong>Cyber Playbook</strong>
   </div>
   <nav class="toplinks">
-    <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
-    <a href="https://www.linkedin.com/in/your-linkedin/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/Claytonholden" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener">LinkedIn</a>
     <a href="files/Resume.pdf" target="_blank" rel="noopener">Resume</a>
   </nav>
 </header>
 
-<!-- Left side nav (anchors) -->
+<!-- Left side nav -->
 <aside class="sidenav">
   <nav>
     <a href="#overview" class="active">Overview</a>
@@ -56,63 +48,53 @@
 <!-- Main content -->
 <main class="wrap">
 
-  <!-- HERO / INTRO -->
+  <!-- Overview / Hero -->
   <section id="overview" class="hero">
     <h1>Show your work — clearly</h1>
     <p class="lead">
-      A single, scrolling playbook built for students and employers.
-      Add topics directly in GitHub. Each topic includes an <strong>Overview</strong>,
-      your <strong>Approach</strong>, <strong>Evidence</strong> (screenshots), and a short <strong>Reflection</strong>.
+      One-page portfolio structured for students and employers. Add topics directly in GitHub:
+      each topic has an <strong>Overview</strong>, your <strong>Approach</strong>,
+      <strong>Evidence</strong> (screenshots), and a short <strong>Reflection</strong>.
     </p>
 
     <div class="pillrow">
       <span class="pill">Student-friendly</span>
       <span class="pill">Employer-ready</span>
-      <span class="pill">No scripts required</span>
+      <span class="pill">No build scripts</span>
       <span class="pill">GitHub Pages</span>
     </div>
 
-    <div class="callouts">
-      <div class="callout">
-        <h3>How to add a topic</h3>
-        <ol>
-          <li>Open <em>index.html</em> → Edit.</li>
-          <li>Copy the <code>&lt;section class="topic"&gt;…&lt;/section&gt;</code> block (see below).</li>
-          <li>Paste it under the right subject, then change titles/text.</li>
-          <li>Upload screenshots to <code>assets/images/</code> and link them.</li>
-          <li>Commit changes → your site updates automatically.</li>
-        </ol>
-      </div>
-      <div class="callout">
-        <h3>Submission checklist</h3>
-        <ul>
-          <li>Clearly titled topic section</li>
-          <li>Overview → Approach → Evidence → Reflection</li>
-          <li>1–3 screenshots (named like <code>2025-11-lab2-01.png</code>)</li>
-          <li>Share your live URL (GitHub Pages)</li>
-        </ul>
-      </div>
-    </div>
+    <!-- Quick Search injected by JS after this element -->
   </section>
 
-  <!-- SUBJECT: HARDWARE -->
+  <!-- What Good Looks Like -->
+  <section class="hero example">
+    <h2>🌟 What Good Looks Like</h2>
+    <ul>
+      <li>✅ Each topic includes all 4 sections (Overview / Approach / Evidence / Reflection)</li>
+      <li>✅ Evidence links open real screenshots in <code>assets/images/</code></li>
+      <li>✅ Filenames are tidy: <code>YYYY-MM-topic-01.png</code></li>
+      <li>✅ Reflection ties the lab to real-world skills</li>
+    </ul>
+  </section>
+
+  <!-- SUBJECT: Hardware -->
   <section id="hardware" class="subject">
     <h2 class="subject-title"><span class="icon" aria-hidden="true">🧩</span> Hardware</h2>
     <p class="subject-sub">Imaging, OS installs, BIOS/UEFI, storage & builds.</p>
 
-    <!-- TOPIC (copy this block to add more) -->
     <section class="topic">
       <h3>Windows Server 2019 — Installation & Desktop Experience</h3>
       <div class="grid two">
         <div>
           <h4>Overview</h4>
-          <p>Installed Server 2019 (Desktop Experience) in VirtualBox. Set admin password, hostname, enabled RDP, and verified connectivity.</p>
+          <p>Installed Windows Server 2019 (Desktop Experience) in a VM. Set admin password, hostname, enabled RDP, and verified connectivity.</p>
           <h4>Approach</h4>
           <ul>
-            <li>Boot ISO → choose “Datacenter (Desktop Experience)”</li>
+            <li>Boot ISO → select “Datacenter (Desktop Experience)”</li>
             <li>Admin password: <code>Secret555</code> (lab default)</li>
             <li>Rename host → restart → confirm in Server Manager</li>
-            <li>Enable Remote Desktop → test connection</li>
+            <li>Enable Remote Desktop → test from host</li>
           </ul>
         </div>
         <div>
@@ -127,65 +109,40 @@
         </div>
       </div>
     </section>
-    <!-- /TOPIC -->
   </section>
 
-  <!-- SUBJECT: NETWORKING -->
+  <!-- SUBJECT: Networking -->
   <section id="networking" class="subject">
     <h2 class="subject-title"><span class="icon" aria-hidden="true">🌐</span> Networking</h2>
     <p class="subject-sub">Addressing, VLANs, routing, firewalls, troubleshooting.</p>
 
     <section class="topic">
-      <h3>IPv4 Addressing & Subnetting</h3>
+      <h3>Bridged vs NAT in Hypervisors</h3>
       <div class="grid two">
         <div>
           <h4>Overview</h4>
-          <p>Planned a subnet scheme for a small campus; validated addressing and calculated usable ranges.</p>
+          <p>Compared NAT vs Bridged networking for VMs; validated IP assignment and reachability to LAN services.</p>
           <h4>Approach</h4>
           <ul>
-            <li>Defined segments for labs/offices/servers</li>
-            <li>Calculated CIDR masks and usable ranges</li>
-            <li>Mapped gateways and DNS per VLAN</li>
+            <li>Created two VMs: one NAT, one Bridged</li>
+            <li>Verified <code>ipconfig /all</code> / <code>ip a</code> and routes</li>
+            <li>Tested ping/DNS to LAN and Internet</li>
           </ul>
         </div>
         <div>
           <h4>Evidence</h4>
           <ul class="evidence">
-            <li><a href="assets/images/2025-11-ipv4-01.png" target="_blank">Addressing table</a></li>
-            <li><a href="assets/images/2025-11-ipv4-02.png" target="_blank">Subnet math</a></li>
+            <li><a href="assets/images/2025-11-bridgednat-01.png" target="_blank">NAT vs Bridged IPs</a></li>
+            <li><a href="assets/images/2025-11-bridgednat-02.png" target="_blank">Route table comparison</a></li>
           </ul>
           <h4>Reflection</h4>
-          <p>Solid with CIDR; next: ACLs and path testing across VLANs.</p>
+          <p>Bridged is great for lab servers reachable from the LAN; NAT is safer for isolated testing. Documented when to use each.</p>
         </div>
       </div>
     </section>
   </section>
-  <section class="topic">
-  <h3>Bridged vs NAT in Hypervisors</h3>
-  <div class="grid two">
-    <div>
-      <h4>Overview</h4>
-      <p>Compared NAT vs Bridged networking for VMs; validated IP assignment and reachability to LAN services.</p>
-      <h4>Approach</h4>
-      <ul>
-        <li>Created two VMs: one NAT, one Bridged</li>
-        <li>Verified <code>ipconfig /all</code> / <code>ip a</code> and default routes</li>
-        <li>Tested ping/DNS to LAN and Internet</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Evidence</h4>
-      <ul class="evidence">
-        <li><a href="assets/images/2025-11-bridgednat-01.png" target="_blank">NAT vs Bridged IPs</a></li>
-        <li><a href="assets/images/2025-11-bridgednat-02.png" target="_blank">Route table comparison</a></li>
-      </ul>
-      <h4>Reflection</h4>
-      <p>Bridged is great for lab servers reachable from the LAN; NAT is safer for isolated testing. Documented when to use each.</p>
-    </div>
-  </div>
-</section>
 
-  <!-- SUBJECT: SECURITY -->
+  <!-- SUBJECT: Security -->
   <section id="security" class="subject">
     <h2 class="subject-title"><span class="icon" aria-hidden="true">🔐</span> Security</h2>
     <p class="subject-sub">Identity & access, logging, cloud security, incident response.</p>
@@ -215,74 +172,55 @@
       </div>
     </section>
   </section>
-  <section class="topic">
-  <h3>Windows Server Hardening — Quick Baseline</h3>
-  <div class="grid two">
-    <div>
-      <h4>Overview</h4>
-      <p>Applied a light hardening baseline: updates, RDP security, local policy review, and basic logging.</p>
-      <h4>Approach</h4>
-      <ul>
-        <li>Windows Update → patch level screenshots</li>
-        <li>RDP: Network Level Authentication + limited users</li>
-        <li>Local Security Policy: password policy minimum</li>
-        <li>Enabled PowerShell transcription/logging (lab scope)</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Evidence</h4>
-      <ul class="evidence">
-        <li><a href="assets/images/2025-11-harden-01.png" target="_blank">Patch level</a></li>
-        <li><a href="assets/images/2025-11-harden-02.png" target="_blank">NLA enabled</a></li>
-        <li><a href="assets/images/2025-11-harden-03.png" target="_blank">Local policy</a></li>
-      </ul>
-      <h4>Reflection</h4>
-      <p>Even a small baseline increases resilience. Next step: CIS Benchmarks mapping and exportable checklist.</p>
-    </div>
-  </div>
-</section>
 
-  <!-- FOOTER -->
+  <!-- Footer + Edit link -->
   <footer class="footer">
     <div>© <span id="y"></span> • Built with GitHub Pages • Topic-first portfolio</div>
+    <div class="editlink">
+      <a href="https://github.com/Claytonholden/Cyber-playbook2/edit/main/index.html" target="_blank" rel="noopener">✏️ Edit this page on GitHub</a>
+    </div>
   </footer>
-<button id="backToTop" class="back-top" aria-label="Back to top">↑</button>
 
 </main>
+
+<!-- Back to Top button -->
+<button id="backToTop" class="back-top" aria-label="Back to top">↑</button>
 
 <script>
   // year
   document.getElementById('y').textContent = new Date().getFullYear();
 
   // sidenav active state on scroll
-  const links = document.querySelectorAll('.sidenav nav a');
-  const secs = [...links].map(a => document.querySelector(a.getAttribute('href')));
+  const navLinks = document.querySelectorAll('.sidenav nav a');
+  const sections = [...navLinks].map(a => document.querySelector(a.getAttribute('href')));
   const onScroll = () => {
     const fromTop = window.scrollY + 120;
-    let active = links[0];
-    secs.forEach((sec, i) => {
-      if (sec.offsetTop <= fromTop) active = links[i];
+    let active = navLinks[0];
+    sections.forEach((sec, i) => {
+      if (sec && sec.offsetTop <= fromTop) active = navLinks[i];
     });
-    links.forEach(l => l.classList.remove('active'));
+    navLinks.forEach(l => l.classList.remove('active'));
     active.classList.add('active');
   };
   document.addEventListener('scroll', onScroll, {passive:true});
-</script>
-// Back to top
-const btn = document.getElementById('backToTop');
-const toggleTop = () => btn.style.opacity = window.scrollY > 900 ? 1 : 0;
-btn.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
-document.addEventListener('scroll', toggleTop, {passive:true});
 
-// Quick filter (search topics by text)
-const searchBox = document.createElement('input');
-searchBox.className = 'quicksearch';
-searchBox.placeholder = 'Search topics…';
-document.querySelector('#overview .pillrow').after(searchBox);
-const topics = Array.from(document.querySelectorAll('.topic'));
-searchBox.addEventListener('input', e=>{
-  const q = e.target.value.toLowerCase();
-  topics.forEach(t => t.style.display = t.innerText.toLowerCase().includes(q) ? '' : 'none');
-});
+  // Back to top visibility + action
+  const topBtn = document.getElementById('backToTop');
+  const toggleTop = () => topBtn.style.opacity = window.scrollY > 900 ? 1 : 0;
+  topBtn.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+  document.addEventListener('scroll', toggleTop, {passive:true});
+
+  // Quick search box
+  const searchBox = document.createElement('input');
+  searchBox.className = 'quicksearch';
+  searchBox.placeholder = 'Search topics…';
+  const overviewHero = document.querySelector('#overview .pillrow');
+  if (overviewHero) overviewHero.after(searchBox);
+  const topics = Array.from(document.querySelectorAll('.topic'));
+  searchBox.addEventListener('input', e=>{
+    const q = e.target.value.toLowerCase();
+    topics.forEach(t => t.style.display = t.innerText.toLowerCase().includes(q) ? '' : 'none');
+  });
+</script>
 </body>
 </html>
