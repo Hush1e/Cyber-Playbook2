@@ -132,33 +132,40 @@
     </section>
   </section>
 
-  <!-- SUBJECT: OSINT -->  
-<section class="topic">
-  <h3>OSINT</h3>
-  <div class="grid two">
-    <div>
-      <h4>Overview</h4>
-      <p>What the lab or project covered and why it matters.</p>
+  <!-- SUBJECT: OSINT -->
+  <section id="osint" class="subject">
+    <h2 class="subject-title"><span class="icon" aria-hidden="true">🧩</span> OSINT</h2>
+    <p class="subject-sub">Imaging, OS installs, BIOS/UEFI, storage & builds.</p>
 
-      <h4>Approach</h4>
-      <ul>
-        <li>Main step 1 …</li>
-        <li>Main step 2 …</li>
-      </ul>
-    </div>
+    <section class="topic">
+      <h3>OSINT stuff will go here</h3>
+      <div class="grid two">
+        <div>
+          <h4>Overview</h4>
+          <p>Installed Windows Server 2019 (Desktop Experience) in a VM. Set admin password, hostname, enabled RDP, and verified connectivity.</p>
+          <h4>Approach</h4>
+          <ul>
+            <li>Boot ISO → select “Datacenter (Desktop Experience)”</li>
+            <li>Admin password: <code>Secret555</code> (lab default)</li>
+            <li>Rename host → restart → confirm in Server Manager</li>
+            <li>Enable Remote Desktop → test from host</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Evidence</h4>
+          <ul class="evidence">
+            <li><a href="assets/images/2025-11-server-01.png" target="_blank">System Properties</a></li>
+            <li><a href="assets/images/2025-11-server-02.png" target="_blank">Server Manager</a></li>
+            <li><a href="assets/images/2025-11-server-03.png" target="_blank">RDP test</a></li>
+          </ul>
+          <h4>Reflection</h4>
+          <p>Standardizing install steps saves time; next up: Group Policy baseline and cloud identity mapping.</p>
+        </div>
+      </div>
+    </section>
+  </section>
 
-    <div>
-      <h4>Evidence</h4>
-      <ul class="evidence">
-        <li><a href="assets/images/YYYY-MM-topic-01.png" target="_blank">Screenshot 1</a></li>
-      </ul>
-
-      <h4>Reflection</h4>
-      <p>What worked, what didn’t, and what you learned.</p>
-    </div>
-  </div>
-</section>
-  
+ 
   <!-- SUBJECT: Networking -->
   <section id="networking" class="subject">
     <h2 class="subject-title"><span class="icon" aria-hidden="true">🌐</span> Networking</h2>
